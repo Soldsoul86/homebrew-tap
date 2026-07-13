@@ -5,21 +5,21 @@
 class Actually < Formula
   desc "Cross-checks what your AI agent claims it did against what actually happened."
   homepage "https://github.com/Soldsoul86/AAA/tree/main/actually"
-  version "0.1.0+actually"
+  version "0.1.1+actually"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+actually/actually_0.1.0_darwin_amd64.tar.gz"
-      sha256 "effe0fb6a4b3eab5160bfd4395bb8b0e183d828788a393fc152f66442941b759"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+actually/actually_0.1.1_darwin_amd64.tar.gz"
+      sha256 "04158dac1950784979481262d54dc9c0aa881e7b34463aff8a453b448452ddfa"
 
       define_method(:install) do
         bin.install "actually"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+actually/actually_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9c5721274d8c6646c5601daa2d5f91230f41ab29091b8c9e07ff104e024dcd9c"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+actually/actually_0.1.1_darwin_arm64.tar.gz"
+      sha256 "624c3107f09cc011f3b708f3e0c45f819c7cf5a8e610cec93d5158cf72aed99a"
 
       define_method(:install) do
         bin.install "actually"
@@ -29,15 +29,15 @@ class Actually < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+actually/actually_0.1.0_linux_amd64.tar.gz"
-      sha256 "11e800149f422ef0b11ec919515d53b268353666651d9ae3dd9ef12d30c089c3"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+actually/actually_0.1.1_linux_amd64.tar.gz"
+      sha256 "29325c3c60d538ec82a9ba938bb908c81af4cc3443721457079125eb1b019b59"
       define_method(:install) do
         bin.install "actually"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+actually/actually_0.1.0_linux_arm64.tar.gz"
-      sha256 "f0c9387c84b533bab8df97df23da33c77ae87d2dfeba6e67db8cf4aa8d4ea45f"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+actually/actually_0.1.1_linux_arm64.tar.gz"
+      sha256 "64229db7a1473839bd55b8d57e549c4b558f2d1d0e167fc986c35db244f1bb14"
       define_method(:install) do
         bin.install "actually"
       end
