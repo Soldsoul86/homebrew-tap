@@ -5,21 +5,21 @@
 class Again < Formula
   desc "Counts how many times you've had to repeat yourself to your AI agent this session."
   homepage "https://github.com/Soldsoul86/AAA/tree/main/again"
-  version "0.1.0+again"
+  version "0.2.0+again"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+again/again_0.1.0_darwin_amd64.tar.gz"
-      sha256 "2c5f011b81bd3644f2b9a33d1b4ec1984064f32d94a7beb17d5e4394abea53e9"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.2.0+again/again_0.2.0_darwin_amd64.tar.gz"
+      sha256 "0102e4624b749228391411b2dfe99bc33a46a1b69c51c3e206da5cd46dc005cf"
 
       define_method(:install) do
         bin.install "again"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+again/again_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8ffe6985d2d2a611b3df3fb261ff2405d85d93ebdedacd14346ddd0c62939b05"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.2.0+again/again_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7b868b9ca09faf9b990a140d3810226bd0d02878ee632e432f80c6c264cff15b"
 
       define_method(:install) do
         bin.install "again"
@@ -29,15 +29,15 @@ class Again < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+again/again_0.1.0_linux_amd64.tar.gz"
-      sha256 "aff52a20274ac5e23f931d0863f534cd083358fea2052783ebb31ec34649301f"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.2.0+again/again_0.2.0_linux_amd64.tar.gz"
+      sha256 "122d7c5a2c91ac287ba0100c5185d1147296331587f7b3ac7fdeac691f4b9783"
       define_method(:install) do
         bin.install "again"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+again/again_0.1.0_linux_arm64.tar.gz"
-      sha256 "34de1e50e126f0a2f86ea07d8185dcd580c229963ba82c085f49000599ee27a0"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.2.0+again/again_0.2.0_linux_arm64.tar.gz"
+      sha256 "ad47fa64f28d599babef42202dc142452816419d0be91a15a64699383dd967e3"
       define_method(:install) do
         bin.install "again"
       end
