@@ -5,21 +5,21 @@
 class Permit < Formula
   desc "Makes Claude Code permission rules easy to write correctly and easy to diagnose."
   homepage "https://github.com/Soldsoul86/AAA/tree/main/permit"
-  version "0.1.0+permit"
+  version "0.1.1+permit"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+permit/permit_0.1.0_darwin_amd64.tar.gz"
-      sha256 "00e51a66727fbb969f92d607738316c246fa50579bf2395ec4e6a259f6eafad8"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+permit/permit_0.1.1_darwin_amd64.tar.gz"
+      sha256 "030c14a7db681043ed214b0c76c837a7d694b7219c686ce447f93758b1ad2040"
 
       define_method(:install) do
         bin.install "permit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+permit/permit_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a97d6eb70abe781334f1b88b1be2fc499524ea9053b208b9783b5375dad9d0ed"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+permit/permit_0.1.1_darwin_arm64.tar.gz"
+      sha256 "3d56ee74486f17938e49342ea7b16b004238eb88e0eb1949f8831fdc66eaea07"
 
       define_method(:install) do
         bin.install "permit"
@@ -29,15 +29,15 @@ class Permit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+permit/permit_0.1.0_linux_amd64.tar.gz"
-      sha256 "bf129d791b77024851a44f000bdef3b621da2ab2c7700b0738dff212b99f25d5"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+permit/permit_0.1.1_linux_amd64.tar.gz"
+      sha256 "ae1d2d747f159e6807eb7d2185c1f3020d723799ab37e41564926f5ebceb17ea"
       define_method(:install) do
         bin.install "permit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+permit/permit_0.1.0_linux_arm64.tar.gz"
-      sha256 "c1ecef1aba40d65e535fdfeb6f3f07e3fee6468eff30c95bea45546bd7498992"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+permit/permit_0.1.1_linux_arm64.tar.gz"
+      sha256 "55ab6dafa418b18e9bc7aa106a269332760c68b8b4f56ab720b68a4fa3126f12"
       define_method(:install) do
         bin.install "permit"
       end
