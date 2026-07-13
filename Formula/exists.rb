@@ -5,21 +5,21 @@
 class Exists < Formula
   desc "Checks whether a package your AI agent just installed actually exists in the real registry."
   homepage "https://github.com/Soldsoul86/AAA/tree/main/exists"
-  version "0.1.0+exists"
+  version "0.1.1+exists"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+exists/exists_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ab2c5792c851cfe6584a9bdeeae6378a73f26df1e122b3e066d78d7e011bfb87"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+exists/exists_0.1.1_darwin_amd64.tar.gz"
+      sha256 "deca553b5b3666652b3de81df02b5a730ae884dc70f06444152c4f0fcfc4c7e6"
 
       define_method(:install) do
         bin.install "exists"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+exists/exists_0.1.0_darwin_arm64.tar.gz"
-      sha256 "65664407ee381d79bfecb096876358345ab3ba49ee2c7546d45bd9b635e72941"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+exists/exists_0.1.1_darwin_arm64.tar.gz"
+      sha256 "7413326c3900930bad7034f609d7e7291e682cde881dba7be9bbec93fd8b1c0b"
 
       define_method(:install) do
         bin.install "exists"
@@ -29,15 +29,15 @@ class Exists < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+exists/exists_0.1.0_linux_amd64.tar.gz"
-      sha256 "57871018f70e4a35e6b540b55cc2cc5b70c6169466d629b083f43568092d9ae8"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+exists/exists_0.1.1_linux_amd64.tar.gz"
+      sha256 "4120b4f82b00875fc836f6facb06556f65f6bc6f49f26d6d472ba8898db28e0d"
       define_method(:install) do
         bin.install "exists"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+exists/exists_0.1.0_linux_arm64.tar.gz"
-      sha256 "9bbbf6a6397e910a624a704d8b3d950ac38eefa76b77a1d23dd7bca3075216b6"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.1+exists/exists_0.1.1_linux_arm64.tar.gz"
+      sha256 "c26e295f62291a7a48197227290d78cf94032ce2db4afed0a106d65438677f9d"
       define_method(:install) do
         bin.install "exists"
       end
