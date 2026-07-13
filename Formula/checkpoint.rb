@@ -10,16 +10,16 @@ class Checkpoint < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_darwin_amd64.tar.gz"
-      sha256 "0f0c1897f274af863ec6369f3d0577cac4beaa87441d6a495884f4c5cab6e122"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0_darwin_amd64.tar.gz"
+      sha256 "89ba37d76cbf9e7cc7b895d9a5b8457d6cbb790abb0e84f4072555905854e87e"
 
       define_method(:install) do
         bin.install "checkpoint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_darwin_arm64.tar.gz"
-      sha256 "3b1a88003a50eaa0948ea348fc2eedeccfe880bd9975bf74fc7222b6e6431cf0"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0_darwin_arm64.tar.gz"
+      sha256 "8620fdbf3c799fdf95c66a06cc600ac5d2cbd587a28267dfb95f85a8dc32ac8f"
 
       define_method(:install) do
         bin.install "checkpoint"
@@ -29,15 +29,15 @@ class Checkpoint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_linux_amd64.tar.gz"
-      sha256 "19205d4008155830d7d682c359c483bac43e6674732dfed7db868adde97d45df"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0_linux_amd64.tar.gz"
+      sha256 "bf5090bd5961d614e4d6dd529cd14b7de822dda05dadf96eec4a918c0d10b104"
       define_method(:install) do
         bin.install "checkpoint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_linux_arm64.tar.gz"
-      sha256 "e72343e4b218fe18219caaf36dc9a520d9dde7313da3276656a8fe8d35e3e8fe"
+      url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0_linux_arm64.tar.gz"
+      sha256 "211ec0d10a5fa9559f8fae961d1c35d131c117011027a95f9e6c3458e7bf99f3"
       define_method(:install) do
         bin.install "checkpoint"
       end
