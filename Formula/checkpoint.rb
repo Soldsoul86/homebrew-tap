@@ -11,7 +11,7 @@ class Checkpoint < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_darwin_amd64.tar.gz"
-      sha256 "a423f698d253ee5d24bff073036d7b025cbbe8d86a79933f0a7da82b105407b6"
+      sha256 "0f0c1897f274af863ec6369f3d0577cac4beaa87441d6a495884f4c5cab6e122"
 
       define_method(:install) do
         bin.install "checkpoint"
@@ -19,7 +19,7 @@ class Checkpoint < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_darwin_arm64.tar.gz"
-      sha256 "48df70d1cfa8ebf12c41a3c01d2d7184992a65ce0d250ce90feef03c3aa6d28a"
+      sha256 "3b1a88003a50eaa0948ea348fc2eedeccfe880bd9975bf74fc7222b6e6431cf0"
 
       define_method(:install) do
         bin.install "checkpoint"
@@ -30,14 +30,14 @@ class Checkpoint < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_linux_amd64.tar.gz"
-      sha256 "7ca2095b66068cbecde3f0cf7f82bdf0682c6b79387dc553c07b8c279d021055"
+      sha256 "19205d4008155830d7d682c359c483bac43e6674732dfed7db868adde97d45df"
       define_method(:install) do
         bin.install "checkpoint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Soldsoul86/AAA/releases/download/v0.1.0+checkpoint/checkpoint_0.1.0+checkpoint_linux_arm64.tar.gz"
-      sha256 "442e45d6f68e41d1c3cc3fd5a2c7930761294a2220dedb4d4ac6ee27337e3163"
+      sha256 "e72343e4b218fe18219caaf36dc9a520d9dde7313da3276656a8fe8d35e3e8fe"
       define_method(:install) do
         bin.install "checkpoint"
       end
